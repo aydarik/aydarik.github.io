@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#1e2327">
-
-    <link rel="icon" type="image/png" href="img/github.png">
-
     <title>Aydar Gumerbaev</title>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="theme-color" content="#1e2327">
+    <link rel="shortcut icon" type="image/png" href="img/github.png">
+
     <style>
-        body {
-            background-image: url(img/404.png);
-            background-repeat: no-repeat;
-            background-size: 30%;
-            background-position: center -15%;
-            background-color: #efefef;
+        html, body {
+            height: 85%;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            padding-top: 75px;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
         }
     </style>
+
+    <script type="text/javascript">
+		function init() {
+			var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+			console.log(randomColor);
+			document.body.style.backgroundColor = "#" + randomColor;
+		}
+    </script>
 </head>
-<body>
-<script type="text/javascript">
-	var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-	console.log(randomColor);
-	document.body.style.backgroundColor = "#" + randomColor;
-</script>
+<body onload="init()">
+<img src="img/404.png">
 </body>
 </html>

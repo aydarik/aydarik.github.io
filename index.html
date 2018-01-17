@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#1e2327">
 
-    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+    <link rel="icon" type="image/png" href="img/github.png">
 
     <title>Aydar Gumerbaev</title>
+
+    <style>
+        body {
+            background-image: url(img/404.png);
+            background-repeat: no-repeat;
+            background-size: 30%;
+            background-position: center -15%;
+            background-color: #efefef;
+        }
+    </style>
 </head>
-<body style="background-color: #efefef; text-align: center;">
-<img style="margin: 100px auto" src="img/404.jpg">
+<body>
+<script type="text/javascript">
+	var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+	console.log(randomColor);
+	document.body.style.backgroundColor = "#" + randomColor;
+</script>
 </body>
 </html>

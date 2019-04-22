@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="mobile-web-app-capable" content="yes"/>
+	<meta name="theme-color" content="#1e2327">
+	<link rel="shortcut icon" type="image/png" href="img/github.png">
+	<title>Aydar Gumerbaev</title>
+	<style>
+		body {
+			background: linear-gradient(270deg, #ff0000, #ffcd00, #2fff00, #0076ff, #c500ff);
+			background-size: 1000% 1000%;
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="theme-color" content="#1e2327">
-    <link rel="shortcut icon" type="image/png" href="img/github.png">
+			-webkit-animation: Gradient 15s ease infinite;
+			-moz-animation: Gradient 15s ease infinite;
+			animation: Gradient 15s ease infinite;
+		}
 
-    <title>Aydar Gumerbaev</title>
+		@-webkit-keyframes Gradient {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@-moz-keyframes Gradient {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@keyframes Gradient { 
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
 
-    <style>
-        html, body {
-            height: 85%;
-            margin: 0;
-            padding: 0;
-        }
-
-        img {
-            padding-top: 75px;
-            display: block;
-            margin: 0 auto;
-            max-height: 100%;
-            max-width: 100%;
-        }
-    </style>
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
 </head>
 <body>
-<script type="text/javascript">
-	document.body.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-</script>
-
-<img src="img/404.png">
+	<img src="img/404.png">
 </body>
 </html>
